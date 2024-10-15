@@ -8,39 +8,118 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="bg-[#101313]">
-    <!-- linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)), -->
+    <!-- linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),  bg-[#101313] -->
     <main
-      class="min-h-screen bg-[url('/images/background.png')] bg-center bg-no-repeat"
+      class="bg-[url('/images/background.png')] bg-center bg-no-repeat min-h-screen"
     >
-      <section
-        id="home"
-        class="flex flex-col items-center justify-center min-h-screen px-4"
-      >
-        <header class="text-white text-center space-y-4">
-          <h1 class="font-anton lg:text-9xl text-5xl uppercase">
-            Clash Alphabet
-          </h1>
-          <p class="opacity-75">
-            Unleash your keyboard KungFu:<br />
-            Press <span class="text-orange-400 font-semibold">"Enter"</span> to
-            play
-          </p>
-          <button class="btn font-bold hover:bg-transparent hover:text-white">
-            Play Now
-          </button>
-        </header>
+      <section id="home" class="container mx-auto hidden">
+        <!-- home -->
+        <div class="flex justify-center items-center min-h-screen">
+          <header class="text-white text-center space-y-4">
+            <h1 class="font-anton lg:text-9xl text-5xl uppercase">
+              Clash Alphabet
+            </h1>
+            <p class="opacity-75">
+              Unleash your keyboard KungFu:<br />
+              Press
+              <span class="text-orange-400 font-semibold">"Enter"</span> to play
+            </p>
+            <button class="btn font-bold hover:bg-transparent hover:text-white">
+              Play Now
+            </button>
+          </header>
+        </div>
+      </section>
+
+      <!-- playground -->
+      <section class="container mx-auto hidden">
+        <div class="flex flex-col justify-center items-center space-y-8 py-8">
+          <!-- art-board -->
+          <div
+            class="artboard artboard-horizontal phone-6 border-[20px] border-[#101313CC] bg-[#FFFFFFB3] rounded-2xl"
+          >
+            <div class="flex justify-center">
+              <p class="bg-[#2F2941] rounded-b-xl px-4 text-white pb-2">
+                Don't watch while you playing...
+              </p>
+            </div>
+
+            <div class="flex items-center justify-center h-full">
+              <span class="text-center text-9xl text-black uppercase font-bold"
+                >K</span
+              >
+            </div>
+          </div>
+
+          <!-- keyboard -->
+          <div class="flex flex-col items-center justify-center px-4">
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd id="q" class="kbd">q</kbd>
+              <kbd id="w" class="kbd">w</kbd>
+              <kbd id="r" class="kbd">e</kbd>
+              <kbd id="r" class="kbd">r</kbd>
+              <kbd id="t" class="kbd">t</kbd>
+              <kbd id="y" class="kbd">y</kbd>
+              <kbd id="u" class="kbd">u</kbd>
+              <kbd id="i" class="kbd">i</kbd>
+              <kbd id="o" class="kbd">o</kbd>
+              <kbd id="p" class="kbd">p</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd id="a" class="kbd">a</kbd>
+              <kbd id="s" class="kbd">s</kbd>
+              <kbd id="d" class="kbd">d</kbd>
+              <kbd id="f" class="kbd">f</kbd>
+              <kbd id="g" class="kbd">g</kbd>
+              <kbd id="h" class="kbd">h</kbd>
+              <kbd id="j" class="kbd">j</kbd>
+              <kbd id="k" class="kbd">k</kbd>
+              <kbd id="l" class="kbd">l</kbd>
+            </div>
+            <div class="my-1 flex w-full justify-center gap-1">
+              <kbd id="z" class="kbd">z</kbd>
+              <kbd id="x" class="kbd">x</kbd>
+              <kbd id="c" class="kbd">c</kbd>
+              <kbd id="v" class="kbd">v</kbd>
+              <kbd id="b" class="kbd">b</kbd>
+              <kbd id="n" class="kbd">n</kbd>
+              <kbd id="m" class="kbd">m</kbd>
+              <kbd id="delete" class="kbd">/</kbd>
+            </div>
+          </div>
+
+          <!-- life button -->
+          <div class="flex justify-between items-center w-1/2">
+            <button class="btn bg-[#2F2941] rounded-badge hover:bg-transparent">
+              <img src="/images/heart.svg" alt="" />
+              <p class="text-white">
+                Life : <span class="text-red-400 ml-1 font-bold">2</span>
+              </p>
+            </button>
+
+            <button class="btn rounded-badge bg-[#2F2941] hover:bg-transparent">
+              <img class="" src="/images/dollar.svg" alt="" />
+              <p class="text-white">
+                Score :
+                <span class="text-green-400 ml-1 font-bold">1</span>
+              </p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- return -->
+      <section class="container mx-auto">
+        <div class="flex items-center justify-center min-h-screen">
+          <header
+            class="rounded-lg bg-[#FFFFFF33] font-bold text-white text-center space-y-4 p-4"
+          >
+            <h2 class="text-5xl md:text-8xl">Score :<span> 1</span></h2>
+            <button class="btn">Play Again</button>
+            <p class="text-red-400">Return-></p>
+          </header>
+        </div>
       </section>
     </main>
-
-    <!-- <section
-        class="bg-yellow-500 min-h-screen text-center flex flex-col justify-center items-center"
-      >
-        <h2>hello</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-          illo aspernatur voluptate. Autem, minus animi? Dolore vitae facere hic
-          sequi.
-        </p>
-      </section> -->
   </body>
 </html>
