@@ -1,7 +1,7 @@
 function play(){
     hideElement('home');
     showElement('playground');
-    console.log('first')
+    generateRandomAlphabet();
 }
 // document.getElementById('play-btn').addEventListener('click',function(){
 //     console.log('play button clicked');
@@ -15,10 +15,15 @@ function play(){
 //     console.log('first')
 // }
 
-// const alphabet = document.getElementById('alphabet');
-// const randomApha = Math.round(Math.random() * 25);
-// console.log(randomApha)
-// document.getElementById('random-alphabet').innerText = randomApha;
+function generateRandomAlphabet(){
+    const stringOfAlphabet = "abcdefghijklmnopqrstuvwxyz"
+    const alphabets = stringOfAlphabet.split('');
+
+    const randomAlphabet = Math.round(Math.random() * 25);
+    const alphabet = alphabets[randomAlphabet];
+    
+    document.getElementById('random-alphabet').innerText = alphabet;
+}
 
 // document.getElementById('alphabet').addEventListener('click', function(e){
 //     console.log(e.target.innerText)
