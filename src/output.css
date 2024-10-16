@@ -1180,14 +1180,14 @@ html{
   margin-top: 0px;
 }
 
-.my-1{
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .ml-1{
@@ -1218,29 +1218,6 @@ html{
   width: 100%;
 }
 
-.w-1\/3{
-  width: 33.333333%;
-}
-
-.min-w-full{
-  min-width: 100%;
-}
-
-.min-w-min{
-  min-width: -moz-min-content;
-  min-width: min-content;
-}
-
-.min-w-max{
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
-.min-w-fit{
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -1257,14 +1234,6 @@ html{
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-1{
   gap: 0.25rem;
 }
@@ -1279,12 +1248,6 @@ html{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .rounded-2xl{
@@ -1308,10 +1271,6 @@ html{
   border-width: 20px;
 }
 
-.border-2{
-  border-width: 2px;
-}
-
 .border-\[\#101313CC\]{
   border-color: #101313CC;
 }
@@ -1326,17 +1285,12 @@ html{
   background-color: rgb(47 41 65 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#FFFFFFB3\]{
-  background-color: #FFFFFFB3;
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#FFFFFF33\]{
   background-color: #FFFFFF33;
+}
+
+.bg-\[\#FFFFFFB3\]{
+  background-color: #FFFFFFB3;
 }
 
 .bg-\[url\(\'\/images\/background\.png\'\)\]{
@@ -1355,29 +1309,14 @@ html{
   padding: 1rem;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-2{
@@ -1397,19 +1336,9 @@ html{
   line-height: 1;
 }
 
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-9xl{
   font-size: 8rem;
   line-height: 1;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -1453,134 +1382,6 @@ html{
   opacity: 0.75;
 }
 
-@media (min-width: 768px){
-  .md\:artboard{
-    width: 100%;
-  }
-
-  .md\:artboard.phone{
-    width: 320px;
-  }
-
-  .md\:artboard.phone-1{
-    width: 320px;
-    height: 568px;
-  }
-
-  .md\:artboard.phone-1.horizontal,.md\:artboard.phone-1.artboard-horizontal{
-    width: 568px;
-    height: 320px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-1{
-    width: 568px;
-    height: 320px;
-  }
-
-  .md\:artboard.phone-2{
-    width: 375px;
-    height: 667px;
-  }
-
-  .md\:artboard.phone-2.horizontal,.md\:artboard.phone-2.artboard-horizontal{
-    width: 667px;
-    height: 375px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-2{
-    width: 667px;
-    height: 375px;
-  }
-
-  .md\:artboard.phone-3{
-    width: 414px;
-    height: 736px;
-  }
-
-  .md\:artboard.phone-3.horizontal,.md\:artboard.phone-3.artboard-horizontal{
-    width: 736px;
-    height: 414px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-3{
-    width: 736px;
-    height: 414px;
-  }
-
-  .md\:artboard.phone-4{
-    width: 375px;
-    height: 812px;
-  }
-
-  .md\:artboard.phone-4.horizontal,.md\:artboard.phone-4.artboard-horizontal{
-    width: 812px;
-    height: 375px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-4{
-    width: 812px;
-    height: 375px;
-  }
-
-  .md\:artboard.phone-5{
-    width: 414px;
-    height: 896px;
-  }
-
-  .md\:artboard.phone-5.horizontal,.md\:artboard.phone-5.artboard-horizontal{
-    width: 896px;
-    height: 414px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-5{
-    width: 896px;
-    height: 414px;
-  }
-
-  .md\:artboard.phone-6{
-    width: 320px;
-    height: 1024px;
-  }
-
-  .md\:phone-6.artboard{
-    width: 320px;
-    height: 1024px;
-  }
-
-  .md\:artboard.phone-6.horizontal,.md\:artboard.phone-6.artboard-horizontal{
-    width: 1024px;
-    height: 320px;
-  }
-
-  .md\:phone-6.artboard.horizontal,.md\:phone-6
-      .artboard.artboard-horizontal{
-    width: 1024px;
-    height: 320px;
-  }
-
-  .md\:artboard.phone-6.horizontal,.md\:artboard.phone-6.artboard-horizontal{
-    width: 1024px;
-    height: 320px;
-  }
-
-  .md\:phone-6.artboard.horizontal,.md\:phone-6
-      .artboard.artboard-horizontal{
-    width: 1024px;
-    height: 320px;
-  }
-
-  .md\:artboard-horizontal
-      .artboard.phone-6{
-    width: 1024px;
-    height: 320px;
-  }
-}
-
 .hover\:bg-transparent:hover{
   background-color: transparent;
 }
@@ -1591,16 +1392,6 @@ html{
 }
 
 @media (min-width: 768px){
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-8xl{
     font-size: 6rem;
     line-height: 1;

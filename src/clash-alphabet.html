@@ -12,7 +12,7 @@
     <main
       class="bg-[url('/images/background.png')] bg-center bg-no-repeat min-h-screen"
     >
-      <section id="home" class="container mx-auto hidden">
+      <section id="home" class="container mx-auto">
         <!-- home -->
         <div class="flex justify-center items-center min-h-screen">
           <header class="text-white text-center space-y-4">
@@ -24,7 +24,11 @@
               Press
               <span class="text-orange-400 font-semibold">"Enter"</span> to play
             </p>
-            <button class="btn font-bold hover:bg-transparent hover:text-white">
+            <button
+              id="play-btn"
+              onclick="play()"
+              class="btn font-bold hover:bg-transparent hover:text-white"
+            >
               Play Now
             </button>
           </header>
@@ -32,7 +36,7 @@
       </section>
 
       <!-- playground -->
-      <section class="container mx-auto hidden">
+      <section id="playground" class="container mx-auto hidden">
         <div class="flex flex-col justify-center items-center space-y-8 py-8">
           <!-- art-board -->
           <div
@@ -45,7 +49,9 @@
             </div>
 
             <div class="flex items-center justify-center h-full">
-              <span class="text-center text-9xl text-black uppercase font-bold"
+              <span
+                id="random-alphabet"
+                class="text-center text-9xl text-black uppercase font-bold"
                 >K</span
               >
             </div>
@@ -53,7 +59,7 @@
 
           <!-- keyboard -->
           <div class="flex flex-col items-center justify-center px-4">
-            <div class="my-1 flex w-full justify-center gap-1">
+            <div id="alphabet" class="my-1 flex w-full justify-center gap-1">
               <kbd id="q" class="kbd">q</kbd>
               <kbd id="w" class="kbd">w</kbd>
               <kbd id="r" class="kbd">e</kbd>
@@ -109,7 +115,7 @@
       </section>
 
       <!-- return -->
-      <section class="container mx-auto">
+      <section class="container mx-auto hidden">
         <div class="flex items-center justify-center min-h-screen">
           <header
             class="rounded-lg bg-[#FFFFFF33] font-bold text-white text-center space-y-4 p-4"
@@ -121,5 +127,9 @@
         </div>
       </section>
     </main>
+
+    <!-- linked js -->
+    <script src="/src/utility.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>
