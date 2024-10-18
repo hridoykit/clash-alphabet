@@ -1293,6 +1293,11 @@ html{
   background-color: #FFFFFFB3;
 }
 
+.bg-orange-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/images\/background\.png\'\)\]{
   background-image: url('/images/background.png');
 }
