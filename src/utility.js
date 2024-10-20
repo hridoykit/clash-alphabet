@@ -7,6 +7,12 @@ function showElement(id){
     document.getElementById(id).classList.remove('hidden');
 };
 
+function incrementScore(id){
+    const score = parseInt(document.getElementById(id).innerText);
+    const incrementLife = score + 1;
+    document.getElementById(id).innerText = incrementLife;
+};
+
 function setBgColor(id){
     document.getElementById(id).classList.add('bg-orange-400')
 };
