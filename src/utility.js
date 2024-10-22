@@ -7,10 +7,14 @@ function showElement(id){
     document.getElementById(id).classList.remove('hidden');
 };
 
-function incrementScore(id){
-    const score = parseInt(document.getElementById(id).innerText);
-    const incrementLife = score + 1;
-    document.getElementById(id).innerText = incrementLife;
+function getInnerValue(id){
+    const value = document.getElementById(id).innerText;
+    return parseInt(value);
+};
+
+function setInnerValue(id, setValue){
+    let value = document.getElementById(id);
+    value.innerText = setValue;
 };
 
 function setBgColor(id){
