@@ -1,15 +1,22 @@
 // handle keyboard key up event
-document.addEventListener('keyup', function handlePressedKey(event){
+document.addEventListener('keyup', handlePressedKey);
+
+// function for handle keyup event
+function handlePressedKey(event){
     const currentPressedAlphabet = event.key;
+
+    if(currentPressedAlphabet === 'Escape'){ // exit the game
+        gameOver(); 
+    };
     
     // expected key to press
     const innerAlphabet = document.getElementById('current-alphabet').innerText;
     const currentShowedAlphabet = innerAlphabet.toLowerCase();
 
     if (currentPressedAlphabet === currentShowedAlphabet){
-        const score = getInnerValue('increment-life');
-        const increment = score + 1;
-        setInnerValue('increment-life', increment);
+        const currentScore = getInnerValue('score');
+        const incrementScore = currentScore + 1;
+        setInnerValue('score', incrementScore);
 
         // start a new round
         gameLoop();
@@ -17,15 +24,15 @@ document.addEventListener('keyup', function handlePressedKey(event){
     }
     else {
         console.log('uppps.s.s.s.s missed');
-        const life = getInnerValue('decrement-life');
-        const decrement = life - 1;
-        setInnerValue('decrement-life', decrement);
+        const currentLife = getInnerValue('life');
+        const decrementLife = currentLife - 1;
+        setInnerValue('life', decrementLife);
 
-        if(decrement === 0){
-            gameOver()
+        if(decrementLife === 0){
+            gameOver();
         };
     };
-});
+};
 
 function gameLoop(){
     const alphabet = generateRandomAlphabet(); //1. func for generating a random alphabet
@@ -35,10 +42,28 @@ function gameLoop(){
 
 function play(){
     hideElement('home');
+    hideElement('game-over');
     showElement('playground');
     gameLoop();
 };
 
+function playAgain(){
+    showElement('home');
+    hideElement('game-over');
+    gameLoop();
+
+    // reset score
+    setInnerValue('life', 5);
+    setInnerValue('score', 0);
+};
+
 function gameOver(){
-    console.log('hi i\m game over');
+    hideElement('playground');
+    showElement('game-over');
+
+    const finalScore = getInnerValue('score');
+    setInnerValue('final-score', finalScore);
+
+    const currentAlpha = getInnerText('current-alphabet');
+    removeBgColor(currentAlpha);  
 };

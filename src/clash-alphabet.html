@@ -21,11 +21,12 @@
             </h1>
             <p class="opacity-75">
               Unleash your keyboard KungFu:<br />
-              Press
-              <span class="text-orange-400 font-semibold">"Enter"</span> to play
+              <!-- Press
+              <span class="text-orange-400 font-semibold"> "Enter"</span>
+              to play -->
             </p>
             <button
-              id="play-btn"
+              id="play-now-btn"
               onclick="play()"
               class="btn font-bold hover:bg-transparent hover:text-white"
             >
@@ -100,9 +101,7 @@
               <img src="/images/heart.svg" alt="" />
               <p class="text-white">
                 Life :
-                <span id="decrement-life" class="text-red-400 ml-1 font-bold"
-                  >5</span
-                >
+                <span id="life" class="text-red-400 ml-1 font-bold">5</span>
               </p>
             </button>
 
@@ -110,9 +109,7 @@
               <img class="" src="/images/dollar.svg" alt="" />
               <p class="text-white">
                 Score :
-                <span id="increment-life" class="text-green-400 ml-1 font-bold"
-                  >0</span
-                >
+                <span id="score" class="text-green-400 ml-1 font-bold">0</span>
               </p>
             </button>
           </div>
@@ -120,13 +117,17 @@
       </section>
 
       <!-- return -->
-      <section class="container mx-auto hidden">
+      <section id="game-over" class="container mx-auto hidden">
         <div class="flex items-center justify-center min-h-screen">
           <header
             class="rounded-lg bg-[#FFFFFF33] font-bold text-white text-center space-y-4 p-4"
           >
-            <h2 class="text-5xl md:text-8xl">Score :<span> 1</span></h2>
-            <button class="btn">Play Again</button>
+            <h2 class="text-5xl md:text-8xl">
+              Score :<span id="final-score"> 1</span>
+            </h2>
+            <button id="play-again" onclick="playAgain()" class="btn">
+              Play Again
+            </button>
             <p class="text-red-400">Return-></p>
           </header>
         </div>

@@ -7,6 +7,10 @@ function showElement(id){
     document.getElementById(id).classList.remove('hidden');
 };
 
+function getInnerText(id){
+    return document.getElementById(id).innerText;
+};
+
 function getInnerValue(id){
     const value = document.getElementById(id).innerText;
     return parseInt(value);
